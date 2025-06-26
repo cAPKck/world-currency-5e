@@ -11,6 +11,7 @@ function registerSettingsConverter() {
         scope: "world",
         config: true,
         default: true,
+        requiresReload: true,
         type: Boolean,
         onChange: () => patchCurrencies(),
     });
@@ -23,6 +24,7 @@ function registerRemove(settingName, originalName) {
         scope: "world",
         config: true,
         default: false,
+        requiresReload: true,
         type: Boolean,
         onChange: () => patchCurrencies(),
     });
@@ -45,6 +47,7 @@ function registerCurrency(settingName, originalName, originalAbrv, altRemove) {
         scope: "world",
         config: !isRemoved,
         default: originalName,
+        requiresReload: true,
         type: String,
         onChange: () => patchCurrencies(),
     });
@@ -53,6 +56,7 @@ function registerCurrency(settingName, originalName, originalAbrv, altRemove) {
         scope: "world",
         config: !isRemoved,
         default: originalAbrv,
+        requiresReload: true,
         type: String,
         onChange: () => patchCurrencies(),
     });
@@ -60,6 +64,7 @@ function registerCurrency(settingName, originalName, originalAbrv, altRemove) {
         name: originalName + " New Icon File Path",
         scope: "world",
         config: !isRemoved,
+        requiresReload: true,
         default: "",
         type: String,
         onChange: () => patchCurrencies(),
@@ -82,6 +87,7 @@ function registerExchangeRate(exchangeSetting, newName, isRemoved) {
         scope: "world",
         config: !isRemoved,
         default: null,
+        requiresReload: true,
         type: Number,
         onChange: () => patchCurrencies(),
     });
@@ -115,6 +121,7 @@ function registerSettingsStandard() {
         scope: "world",
         config: true,
         default: "gp",
+        requiresReload: true,
         type: String,
         choices: {
             pp: game.settings.get(WORLD_CURRENCY_5E, ALT.PP),

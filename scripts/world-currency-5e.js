@@ -118,48 +118,55 @@ function patchCurrencies() {
 }
 
 /** Removes the currency converter from the given character sheet. */
-function removeConvertCurrency(html) {
-    // dnd5e 4
-    html
-        .find(`[class="currency"]`)
-        ?.find(`[class="item-action unbutton"]`)
-        ?.remove();
+function removeConvertCurrency(element) {
+    element.getElementsByClassName("currency")?.[0]?.getElementsByClassName("item-action")?.[0]?.remove();
 }
 
 /** Removes specified currency from character sheet */
-function removeCurrency(html, currency) {
-    // dnd5e 4
-    html.find(`[class="currency"]`)?.find(`[aria-label="${currency}"]`)?.remove();
+function removeCurrency(element, currency, currencyAbrv) {
+    let currencies = element.getElementsByClassName("currency")?.[0]?.children;
+    for (let i = 0; i < currencies.length; i++) {
+
+        // Character sheet V2
+        if (currencies[i].ariaLabel == `${currency}`) {
+            currencies[i].remove();
+        }
+
+        // Character sheet 5e
+        if (currencies[i].classList.contains(currencyAbrv)) {
+            currencies[i].remove();
+        }
+        if (currencies[i].name == `system.currency.${currencyAbrv}`) {
+            currencies[i].remove();
+        }
+
+    }
 }
 
-function removeCurrencies(html) {
+function removeCurrencies(element) {
     if (game.settings.get(WORLD_CURRENCY_5E, "RemoveConverter")) {
-        removeConvertCurrency(html);
+        removeConvertCurrency(element);
     }
     if (game.settings.get(WORLD_CURRENCY_5E, ALT_REMOVE.CP)) {
-        removeCurrency(html, "Copper");
+        removeCurrency(element, "Copper", "cp");
     }
     if (game.settings.get(WORLD_CURRENCY_5E, ALT_REMOVE.SP)) {
-        removeCurrency(html, "Silver");
+        removeCurrency(element, "Silver", "sp");
     }
     if (game.settings.get(WORLD_CURRENCY_5E, ALT_REMOVE.EP)) {
-        removeCurrency(html, "Electrum");
+        removeCurrency(element, "Electrum", "ep");
     }
     if (game.settings.get(WORLD_CURRENCY_5E, ALT_REMOVE.GP)) {
-        removeCurrency(html, "Gold");
+        removeCurrency(element, "Gold", "gp");
     }
     if (game.settings.get(WORLD_CURRENCY_5E, ALT_REMOVE.PP)) {
-        removeCurrency(html, "Platinum");
+        removeCurrency(element, "Platinum", "pp");
     }
 }
 
 /** Change currency icons in sheet */
-function changeCurrencyIcon(html, currency, icon) {
-    html.styl
-    // dnd5e 4
-    for (let h of html.find(`[class="currency ${currency}"]`)) {
-        h.style.backgroundImage = `url('${icon}')`;
-    }
+function changeCurrencyIcon(element, currency, icon) {
+    element.getElementsByClassName(`currency ${currency}`)?.[0]?.style.setProperty("background-image", `url('${icon}')`);
 }
 
 function changeCurrencyIcons(html) {
