@@ -3,19 +3,19 @@
 <p align="center">
 <img src="https://gitlab.com/uploads/-/system/project/avatar/9199873/fvtt-solid-512.png?width=64" />
 </p>
-<!-- <p align="center">
+<p align="center">
 <a href="https://github.com/cAPKck/5e-world-currency"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
-<a href="https://github.com/cAPKck/5e-world-currency"><img src="https://img.shields.io/github/v/release/cstby/foundryvtt-world-currency-5e.svg" alt="Version"></a>
-<a href="https://foundryvtt.com/releases/"><img src="https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/cstby/foundryvtt-world-currency-5e/master/module.json"></a>
- <img alt="GitHub Issues" src="https://img.shields.io/github/issues/cstby/foundryvtt-world-currency-5e">
-</p> -->
+<a href="https://github.com/cAPKck/5e-world-currency"><img src="https://img.shields.io/github/v/release/cAPKck/5e-world-currency.svg" alt="Version"></a>
+<a href="https://foundryvtt.com/releases/"><img src="https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/cAPKck/5e-world-currency/releases/latest/download/module.json"></a>
+<a href="https://github.com/cAPKck/5e-world-currency/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/cAPKck/5e-world-currency"></a>
+</p>
 
 This [FoundryVTT](https://foundryvtt.com) module allows you to use your world's homebrew currencies in D&D 5th Edition. It is forked from cstby's [World Currency 5e](https://github.com/cstby/foundryvtt-world-currency-5e) module and updated to work with the newest versions of Foundry and the dnd5e module.
 
 ## Installation
 
 1. On Foundry's "Add-on Modules" tab, click "Install Module"
-2. At the bottom, paste `https://raw.githubusercontent.com/cAPKck/5e-world-currency/master/module.json` into the "Manifest URL" field and click "install".
+2. At the bottom, paste `https://github.com/cAPKck/5e-world-currency/releases/latest/download/module.json` into the "Manifest URL" field and click "install".
 
 ## Features
 
@@ -31,10 +31,6 @@ Hide currencies that you don't want to use. If your players get confused by plat
 
 If your currencies aren't meant to be interchangeable, you can hide the currency converter from the character sheets.
 
-### Standard Currency
-
-Set a standard currency. All items will be priced in that currency instead of gold. You and your players won't see any reference to gold or need to consider items prices in gold.
-
 ### Set Conversion Rates
 
 Set whatever currency rates you need. Great for using the silver standard, which makes gold more rare.
@@ -43,18 +39,15 @@ Set whatever currency rates you need. Great for using the silver standard, which
 
 World Currencies 5e works by patching the currency names and rates set by the D&D 5e System. Any module that pulls names and rates from the D&D 5e System will display them correctly.
 
-| **Name**                                                                                         |       Works        | Notes                                                                                                                               |
-| ------------------------------------------------------------------------------------------------ | :----------------: | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [D&D 5e System](https://github.com/foundryvtt/dnd5e)                                             | :heavy_check_mark: | Fully Compatible                                                                                                                    |
-| [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles)                            | :x:                | Not yet compatible                                                                                                                  |
-
-## Known Limitations
-
-- Item prices can only be edited when the standard currency is gp. This is because the DND5e system assumes all items are priced in gold.
+| **Name** | Works | Notes |
+| --- | --- | --- |
+| [D&D 5e System](https://github.com/foundryvtt/dnd5e) | :heavy_check_mark: | Fully Compatible |
+| [Item Piles for D&D 5e](https://github.com/fantasycalendar/FoundryVTT-ItemPilesDND5e) | :heavy_check_mark: | If installed, a button is added to sync settings |
+| [Tidy 5e Sheets](https://github.com/kgar/foundry-vtt-tidy-5e-sheets) | :heavy_check_mark: | Should be working out of the box |
 
 ## Contributing
 
-If you run into anything unexpected or have an idea for a new feature, please [submit an issue](https://github.com/cstby/foundryvtt-world-currency-5e/issues). Merge requests are more than welcome.
+If you run into anything unexpected or have an idea for a new feature, please [submit an issue](https://github.com/cAPKck/5e-world-currency/issues). Merge requests are more than welcome.
 
 ## Acknowledgements
 
