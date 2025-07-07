@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Create GitHub Release
         id: github-release
-        uses: foundryvtt-dcc/foundry-release-action@main
+        uses: cAPKck/foundry-release-action@main
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
           manifestFileName: 'module.json'
