@@ -2,7 +2,7 @@
  * Settings that allow user to specify custom currencies and other options.
  */
 
-import { patchCurrencies, WORLD_CURRENCY_5E, ALT_REMOVE, ALT } from "./5e-world-currency.js";
+import { patchCurrencies, WORLD_CURRENCY_5E, ALT_REMOVE, ALT } from "./core.js";
 import { ItemPilesSettingsUpdater } from "./itemPiles.js";
 
 /** Registers setting to remove the currency converter from the currency manager. */

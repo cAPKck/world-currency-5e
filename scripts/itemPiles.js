@@ -1,4 +1,4 @@
-import * as core from "./5e-world-currency.js";
+import * as core from "./core.js";
 
 export class ItemPilesSettingsUpdater extends FormApplication {
     // Object to build button on the form to update Item Piles settings
