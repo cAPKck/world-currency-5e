@@ -15,7 +15,7 @@ This [FoundryVTT](https://foundryvtt.com) module allows you to use your world's 
 ## Installation
 
 1. On Foundry's "Add-on Modules" tab, click "Install Module"
-2. At the bottom, paste `https://github.com/cAPKck/5e-world-currency/releases/latest/download/module.json` into the "Manifest URL" field and click "install".
+2. At the bottom, paste `https://github.com/cAPKck/world-currency-5e/releases/latest/download/module.json` into the "Manifest URL" field and click "install".
 
 ## Features
 
