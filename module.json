@@ -30,10 +30,10 @@
             }
         ]
     },
-    "url": "https://github.com/cAPKck/5e-world-currency",
-    "manifest": "https://github.com/cAPKck/5e-world-currency/releases/latest/download/module.json",
+    "url": "https://github.com/cAPKck/world-currency-5e",
+    "manifest": "https://github.com/cAPKck/world-currency-5e/releases/latest/download/module.json",
     "download": "AUTOMATIC",
-    "readme": "https://github.com/cAPKck/5e-world-currency/blob/master/README.md",
-    "bugs": "https://github.com/cAPKck/5e-world-currency/issues",
-    "changelog": "https://github.com/cAPKck/5e-world-currency/releases"
+    "readme": "https://github.com/cAPKck/world-currency-5e/blob/master/README.md",
+    "bugs": "https://github.com/cAPKck/world-currency-5e/issues",
+    "changelog": "https://github.com/cAPKck/world-currency-5e/releases"
 }

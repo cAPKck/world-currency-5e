@@ -4,10 +4,10 @@
 <img src="https://gitlab.com/uploads/-/system/project/avatar/9199873/fvtt-solid-512.png?width=64" />
 </p>
 <p align="center">
-<a href="https://github.com/cAPKck/5e-world-currency"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
-<a href="https://github.com/cAPKck/5e-world-currency"><img src="https://img.shields.io/github/v/release/cAPKck/5e-world-currency.svg" alt="Version"></a>
-<a href="https://foundryvtt.com/releases/"><img src="https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/cAPKck/5e-world-currency/releases/latest/download/module.json"></a>
-<a href="https://github.com/cAPKck/5e-world-currency/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/cAPKck/5e-world-currency"></a>
+<a href="https://github.com/cAPKck/world-currency-5e"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
+<a href="https://github.com/cAPKck/world-currency-5e"><img src="https://img.shields.io/github/v/release/cAPKck/world-currency-5e.svg" alt="Version"></a>
+<a href="https://foundryvtt.com/releases/"><img src="https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/cAPKck/world-currency-5e/releases/latest/download/module.json"></a>
+<a href="https://github.com/cAPKck/world-currency-5e/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/cAPKck/world-currency-5e"></a>
 </p>
 
 This [FoundryVTT](https://foundryvtt.com) module allows you to use your world's homebrew currencies in D&D 5th Edition. It is forked from cstby's [World Currency 5e](https://github.com/cstby/foundryvtt-world-currency-5e) module and updated to work with the newest versions of Foundry and the dnd5e module.
@@ -47,7 +47,7 @@ World Currencies 5e works by patching the currency names and rates set by the D&
 
 ## Contributing
 
-If you run into anything unexpected or have an idea for a new feature, please [submit an issue](https://github.com/cAPKck/5e-world-currency/issues). Merge requests are more than welcome.
+If you run into anything unexpected or have an idea for a new feature, please [submit an issue](https://github.com/cAPKck/world-currency-5e/issues). Merge requests are more than welcome.
 
 ## Acknowledgements
 
