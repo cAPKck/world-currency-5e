@@ -22,6 +22,6 @@ jobs:
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
           manifestFileName: 'module.json'
-          manifestProtectedTrue: true
-          publicRepositoryAndBranch: 'foundryvtt-dcc/dcc-content/main'
+          manifestProtectedTrue: false
+          publicRepositoryAndBranch: 'cAPKck/world-currency-5e/main'
 
