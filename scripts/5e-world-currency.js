@@ -186,7 +186,7 @@ function patchIPCurrencies() {
         });
     }
     if (!game.settings.get(WORLD_CURRENCY_5E, ALT_REMOVE.CP)) {
-        ccurrencyConfig.push({
+        currencyConfig.push({
             index: currencyConfig.length,
             id: "system.currency.cp",
             data: {
